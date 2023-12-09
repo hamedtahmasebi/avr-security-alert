@@ -125,6 +125,18 @@ void handle_keypad_action(eKeypadAction action, tStatusObj *status_obj) {
 
 interrupt[2] void trigger_alarm() { PORTD .1 = 1; }
 
+void lcd_render_guide() {
+  lcd_clear();
+  _lcd_ready();
+  lcd_gotoxy(0, 0);
+  delay_ms(10);
+  lcd_puts("1 on | 2 off");
+  delay_ms(15);
+  lcd_gotoxy(0, 1);
+  delay_ms(15);
+  lcd_puts("3 lock | 4 unlock") 
+}
+
 void main(void) {
   // Declare your local variables here
   tStatusObj status_obj = {.is_on = 1, .is_locked = 0};
@@ -141,21 +153,13 @@ void main(void) {
 
 #asm("sei")
   lcd_init(16);
-  lcd_clear();
-  _lcd_ready();
-  lcd_gotoxy(0, 0);
-  delay_ms(10);
-  lcd_puts("1 on | 2 off");
-  delay_ms(10);
-  lcd_gotoxy(0, 2);
-  lcd_puts("3 lock | 4 unlock");
+  lcd_render_guide();
   while (1) {
     // Handle remote action: Start
     if (status_obj.is_locked != 1) {
       int turn_off_flag = PINA .5;
       int turn_on_flag = PINA .6;
       int discard_alarm_flag = PINA .7;
-      unsigned char input_char;
       eRemoteAction remote_action;
       if (turn_off_flag == 1) {
         remote_action = rmt_turn_off;

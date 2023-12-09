@@ -1,4 +1,4 @@
-VERSION:3 SOURCE_TIMESTAMP:5789B087
+VERSION:3 SOURCE_TIMESTAMP:5789B1F8
 NODE:I LEVEL:0 LINE:24 "C:\cvavr\inc\delay.h"
 NODE:I LEVEL:0 LINE:25 "C:\cvavr\inc\lcd.h"
 NODE:I LEVEL:0 LINE:26 "C:\cvavr\inc\mega32.h"
@@ -29,4 +29,5 @@ NODE:C LEVEL:0 LINE:71 "KEYPAD_MATRIX -> FLASH"
 NODE:F LEVEL:0 LINE:74 "read_keypad(unsigned char * enable_switch_status)"
 NODE:F LEVEL:0 LINE:107 "handle_keypad_action(enum eKeypadAction action,struct tStatusObj * status_obj)"
 NODE:F LEVEL:0 LINE:126 "trigger_alarm(void)"
-NODE:F LEVEL:0 LINE:128 "main(void)"
+NODE:F LEVEL:0 LINE:128 "lcd_render_guide(void)"
+NODE:F LEVEL:0 LINE:140 "main(void)"
