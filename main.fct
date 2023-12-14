@@ -1,6 +1,6 @@
-main DSTACK_USAGE:11 DSTACK_LEVEL:11 FILE:"main.c" LINE:140
-lcd_render_guide DSTACK_USAGE:0 DSTACK_LEVEL:11 FILE:"main.c" LINE:128
-lcd_puts DSTACK_USAGE:3 DSTACK_LEVEL:14 FILE:"C:\cvavr\lib\lcd.lib" LINE:210
-lcd_putchar DSTACK_USAGE:1 DSTACK_LEVEL:15 FILE:"C:\cvavr\lib\lcd.lib" LINE:178
-lcd_gotoxy DSTACK_USAGE:2 DSTACK_LEVEL:17 FILE:"C:\cvavr\lib\lcd.lib" LINE:158
-_lcd_write_data DSTACK_USAGE:1 DSTACK_LEVEL:18 FILE:"C:\cvavr\lib\lcd.lib" LINE:77
+main DSTACK_USAGE:16 DSTACK_LEVEL:16 FILE:"main.c" LINE:237
+lcd_render_guide DSTACK_USAGE:0 DSTACK_LEVEL:16 FILE:"main.c" LINE:135
+lcd_puts DSTACK_USAGE:3 DSTACK_LEVEL:19 FILE:"C:\cvavr\lib\lcd.lib" LINE:210
+lcd_putchar DSTACK_USAGE:1 DSTACK_LEVEL:20 FILE:"C:\cvavr\lib\lcd.lib" LINE:178
+lcd_gotoxy DSTACK_USAGE:2 DSTACK_LEVEL:22 FILE:"C:\cvavr\lib\lcd.lib" LINE:158
+_lcd_write_data DSTACK_USAGE:1 DSTACK_LEVEL:23 FILE:"C:\cvavr\lib\lcd.lib" LINE:77
